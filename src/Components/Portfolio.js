@@ -161,8 +161,60 @@ export default function Portfolio() {
       .
       .
       */}
-      <div className="my-4">
-        <h1 className="text-white text-xl font-semibold">About</h1>
+      <div className="my-20 relative truncate">
+        <h1 className="text-white text-2xl md:text-3xl font-semibold text-center mb-12 ">
+          About
+        </h1>
+
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white"></div>
+
+        <div className="space-y-12">
+          <div className="relative flex items-center">
+            <div className="w-1/2 text-right pr-8">
+              <h3 className="text-lg font-semibold text-white">Workverse</h3>
+              <p className="text-gray-300">Detail about work experience 2</p>
+            </div>
+            <div className="w-1/2 flex justify-center">
+              <span className="bg-yellow-400 rounded-full h-4 w-4 absolute left-1/2 transform -translate-x-1/2"></span>
+            </div>
+          </div>
+
+          <div className="relative flex items-center">
+            <div className="w-1/2 flex justify-center">
+              <span className="bg-yellow-400 rounded-full h-4 w-4 absolute left-1/2 transform -translate-x-1/2"></span>
+            </div>
+            <div className="w-1/2 pl-8 text-start">
+              <h3 className="text-lg font-semibold text-white">
+                Ntech Global Solutions
+              </h3>
+              <p className="text-gray-300">Detail about work experience 1</p>
+            </div>
+          </div>
+
+          <div className="relative flex items-center">
+            <div className="w-1/2 text-right pr-8">
+              <h3 className="text-lg font-semibold text-white">
+                Full Stack Develpment Course
+              </h3>
+              <p className="text-gray-300">Detail about the course</p>
+            </div>
+            <div className="w-1/2 flex justify-center">
+              {/* Dot */}
+              <span className="bg-yellow-400 rounded-full h-4 w-4 absolute left-1/2 transform -translate-x-1/2"></span>
+            </div>
+          </div>
+
+          <div className="relative flex items-center">
+            <div className="w-1/2 flex justify-center">
+              {/* Dot */}
+              <span className="bg-yellow-400 rounded-full h-4 w-4 absolute left-1/2 transform -translate-x-1/2"></span>
+            </div>
+            <div className="w-1/2 pl-8 text-start">
+              <h3 className="text-lg font-semibold text-white">BE - EXTC</h3>
+              <p className="text-gray-300">Detail about degree</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* 
@@ -174,10 +226,80 @@ export default function Portfolio() {
       .
       .
       */}
-      <div className="my-4">
-        <h1 className="text-white text-xl font-semibold">Skills</h1>
-      </div>
+      <div className="my-20">
+        <h1 className="text-white text-2xl md:text-3xl  font-semibold">
+          Skills
+        </h1>
 
+        <div className="hidden md:block">
+          <div className="mt-16 flex flex-col gap-20 ">
+            <div className="flex flex-wrap justify-between">
+              {" "}
+              <img className="w-1/12 " src="html.svg" alt="html" />
+              <img className="w-1/12" src="css.svg" alt="css" />
+              <img className="w-1/12" src="js.svg" alt="js" />
+              <img className="w-1/12" src="react.svg" alt="react" />
+              <img className="w-1/12 " src="redux.svg" alt="redux" />
+              <img className="w-1/12 " src="bootstrap.svg" alt="bootstrap" />
+            </div>
+
+            <div className="flex flex-wrap justify-around">
+              {" "}
+              <img className="w-1/12 " src="tailwind.svg" alt="tailwind" />
+              <img className="w-1/12" src="mongo.svg" alt="mongo" />
+              <img className="w-1/12 " src="node.svg" alt="node" />
+              <img className="w-1/12 " src="express.svg" alt="express" />
+              <img className="w-1/12" src="chakra.svg" alt="chakra" />
+            </div>
+
+            <div className="flex flex-wrap justify-between">
+              <img className="w-1/12" src="git.svg" alt="git" />
+              <img className="w-1/12 " src="github.svg" alt="github" />
+              <img className="w-1/12 " src="aws.svg" alt="aws" />
+              <img className="w-1/12 " src="vercel.svg" alt="vercel" />
+              <img className="w-1/12" src="swagger.svg" alt="swagger" />
+              <img className="w-1/12 " src="postman.svg" alt="postman" />
+            </div>
+          </div>
+        </div>
+
+        <div className="block md:hidden">
+          <div className="mt-8 flex flex-col gap-8 ">
+            <div className="flex flex-wrap justify-around">
+              {" "}
+              <img className="w-2/12 " src="html.svg" alt="html" />
+              <img className="w-2/12" src="css.svg" alt="css" />
+              <img className="w-2/12" src="js.svg" alt="js" />
+            </div>
+
+            <div className="flex flex-wrap justify-between">
+              <img className="w-2/12" src="react.svg" alt="react" />
+              <img className="w-2/12 " src="redux.svg" alt="redux" />
+              <img className="w-2/12 " src="bootstrap.svg" alt="bootstrap" />
+              <img className="w-2/12 " src="tailwind.svg" alt="tailwind" />
+            </div>
+
+            <div className="flex flex-wrap justify-around">
+              <img className="w-2/12" src="mongo.svg" alt="mongo" />
+              <img className="w-2/12 " src="express.svg" alt="express" />
+              <img className="w-2/12 " src="node.svg" alt="node" />
+            </div>
+
+            <div className="flex flex-wrap justify-between">
+              <img className="w-2/12" src="chakra.svg" alt="chakra" />
+              <img className="w-2/12 " src="aws.svg" alt="aws" />
+              <img className="w-2/12" src="git.svg" alt="git" />
+              <img className="w-2/12 " src="github.svg" alt="github" />
+            </div>
+
+            <div className="flex flex-wrap justify-around">
+              <img className="w-2/12 " src="vercel.svg" alt="vercel" />
+              <img className="w-2/12" src="swagger.svg" alt="swagger" />
+              <img className="w-2/12 " src="postman.svg" alt="postman" />
+            </div>
+          </div>
+        </div>
+      </div>
       {/* 
       .
       .
@@ -187,50 +309,91 @@ export default function Portfolio() {
       .
       .
       */}
-      <div className="my-12">
-        <h1 className="text-white text-xl font-semibold">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 px-12">
+      <div>
+        <h1 className="text-white text-2xl md:text-3xl  font-semibold">
+          Projects
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 px-md-12">
           <div className="relative group col-span-1">
-            <a href="https://emperia-ecom.vercel.app/" target="_blank" rel="noreferrer">
+            <a
+              href="https://emperia-ecom.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                className="rounded-lg w-full h-auto object-cover"
-                src="emperia.png"
-                alt="Emperia Ecom"
+                className="rounded-lg w-full h-auto object-cover w-10/12 mx-auto"
+                src="pc4_img.png"
+                alt="pc4_img"
               />
-              <div className="absolute inset-0 bg-yellow-200 opacity-0 group-hover:opacity-75 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                <span className="text-lg font-semibold text-black">
-                  Emperia Ecommerce Website
-                </span>
+
+              <div className="absolute top-[5%] left-[11%] w-[77%] h-[82%]">
+                <img
+                  className="w-full h-full rounded "
+                  src="emperia.png"
+                  alt="Emperia Ecom"
+                />
+
+                <div className="absolute inset-0 bg-yellow-400 opacity-0 hover:opacity-75 transition-opacity duration-300 rounded flex items-center justify-center">
+                  <span className="text-lg font-semibold text-white">
+                    Emperia Ecommerce Website
+                  </span>
+                </div>
               </div>
             </a>
           </div>
 
           <div className="relative group col-span-1">
-            <a href="https://expense-management-03.vercel.app/" target="_blank" rel="noreferrer">
+            <a
+              href="https://expense-management-03.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                className="rounded-lg w-full h-auto object-cover"
-                src="expense.png"
-                alt="Expense Management"
+                className="rounded-lg w-full h-auto object-cover w-10/12 mx-auto"
+                src="pc4_img.png"
+                alt="pc4_img"
               />
-              <div className="absolute inset-0 bg-yellow-200 opacity-0 group-hover:opacity-75 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                <span className="text-lg font-semibold text-black">
-                  Expense Management (Track your Expenses)
-                </span>
+
+              <div className="absolute top-[5%] left-[11%] w-[77%] h-[82%]">
+                <img
+                  className="w-full h-full rounded "
+                  src="expense.png"
+                  alt="Expense Management"
+                />
+
+                <div className="absolute inset-0 bg-yellow-400 opacity-0 group-hover:opacity-75 transition-opacity duration-300 rounded flex items-center justify-center">
+                  <span className="text-lg font-semibold text-white">
+                    Expense Management (Track your Expenses)
+                  </span>
+                </div>
               </div>
             </a>
           </div>
 
           <div className="relative group col-span-1">
-            <a href="https://figma-fusion.vercel.app/" target="_blank" rel="noreferrer">
+            <a
+              href="https://figma-fusion.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
-                className="rounded-lg w-full h-auto object-cover"
-                src="figmafusion.png"
-                alt="Figma Fusion"
+                className="rounded-lg w-full h-auto object-cover w-10/12 mx-auto"
+                src="pc4_img.png"
+                alt="pc4_img"
               />
-              <div className="absolute inset-0 bg-yellow-200 opacity-0 group-hover:opacity-75 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                <span className="text-lg font-semibold text-black">
-                  Figma Fusion (Figma to code )
-                </span>
+
+              <div className="absolute top-[5%] left-[11%] w-[77%] h-[82%]">
+                <img
+                  className="w-full h-full rounded "
+                  src="figmafusion.png"
+                  alt="Figma Fusion"
+                />
+
+                <div className="absolute inset-0 bg-yellow-400 opacity-0 group-hover:opacity-75 transition-opacity duration-300 rounded flex items-center justify-center">
+                  <span className="text-lg font-semibold text-white">
+                    Figma Fusion (Figma to code )
+                  </span>
+                </div>
               </div>
             </a>
           </div>
@@ -246,8 +409,10 @@ export default function Portfolio() {
       .
       .
       */}
-      <div className="my-16">
-        <h1 className="text-white text-xl font-semibold">Blogs</h1>
+      <div className="my-20">
+        <h1 className="text-white text-2xl md:text-3xl  font-semibold">
+          Blogs
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
           <div className="max-w-sm p-6 mx-auto border border-gray-200 rounded-lg shadow dark:border-gray-700">
             <a
@@ -312,59 +477,8 @@ export default function Portfolio() {
       .
       .
       */}
-      <div className="my-7">
+      <div className="mb-16">
         <h4 className="text-white">Having a Project in Mind? Let's connect.</h4>
-
-        {/* <form
-          // onSubmit={handleSubmit(onSubmit)}
-          action="https://api.web3forms.com/submit"
-          method="POST"
-          className="mt-10 flex flex-col gap-3 mx-auto lg:w-6/12 md:w-8/12 w-11/12 gap-5"
-        >
-          <input
-            type="hidden"
-            name="access_key"
-            value="9019ec38-4b36-4479-a747-68369246aedd"
-          />
-          <input
-            type="text"
-            placeholder="First name"
-            className="px-2 py-1 rounded"
-            {...register("First name", { required: true, maxLength: 80 })}
-          />
-          <input
-            type="text"
-            placeholder="Last name"
-            className="px-2 py-1 rounded"
-            {...register("Last name", { required: true, maxLength: 100 })}
-          />
-          <input
-            type="tel"
-            placeholder="Mobile number"
-            className="px-2 py-1 rounded"
-            {...register("Mobile number", {
-              required: true,
-              minLength: 10,
-              maxLength: 10,
-            })}
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            className="px-2 py-1 rounded"
-            {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
-          />
-          <textarea
-            placeholder="Message..."
-            className="px-2 py-1 rounded"
-            {...register("Message...", { required: true })}
-          />
-
-          <input
-            type="submit"
-            className="font-semibold mx-auto px-2 py-1 rounded lg:w-2/12 md:w-3/12 w-4/12 bg-yellow-400 cursor-pointer"
-          />
-        </form> */}
 
         <div className="mt-10 flex flex-col gap-3 mx-auto lg:w-6/12 md:w-8/12 w-11/12 gap-5">
           {!isSubmitSuccessful && (
@@ -440,12 +554,12 @@ export default function Portfolio() {
 
               <div className="mb-6">
                 <label htmlFor="email_address" className="sr-only">
-                  Email Address
+                  Email
                 </label>
                 <input
                   id="email_address"
                   type="email"
-                  placeholder="Email Address"
+                  placeholder="Email"
                   name="email"
                   className={`px-2 py-1 rounded w-full ${
                     errors.email
@@ -470,7 +584,7 @@ export default function Portfolio() {
               <div className="mb-8">
                 <textarea
                   name="message"
-                  placeholder="Your Message"
+                  placeholder="Message"
                   className={`px-2 py-1 rounded h-20 w-full ${
                     errors.message
                       ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -579,16 +693,6 @@ export default function Portfolio() {
             </div>
           )}
         </div>
-        {/* <p className="text-center text-sm">
-          <a
-            href="https://web3forms.com/"
-            target="_blank"
-            rel="noopener"
-            className="text-indigo-500"
-          >
-            Forms by Web3Froms
-          </a>
-        </p> */}
       </div>
 
       {/* 
